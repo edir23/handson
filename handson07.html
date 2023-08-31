@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson 07</title>
+</head>
+
+<body>
+
+    <h1>Hands On 07</h1>
+    <p>Crime um algorítimo que calcule a média de duas notas de um aluno.</p>
+    Digite a primeira nota: <input type="number" id="nota1"> <br><br>
+    Digite a segunda nota: <input type="number" id="nota2"> <br><br>
+    <button onclick="verificarAp()">Verficar Nota</button>
+    <script>
+        function verificarAp() {
+            var nota1 = parseFloat(document.getElementById("nota1").value)
+            var nota2 = parseFloat(document.getElementById("nota2").value)
+            var media = parseFloat(nota1 + nota2) / 2;
+            if (media >= 7) {
+
+                alert(`A média do aluno é ${media}. O aluno está aprovado.`)
+            } else {
+                alert(`A média do aluno é ${media}. O aluno está reprovado.`)
+            }
+
+
+        }
+        
+
+    </script>
+</body>
+
+
+
+</html>

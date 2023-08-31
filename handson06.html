@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson 06</title>
+</head>
+<body>
+
+    <h1>Hands On 06</h1>
+    <p>Desafio: Leia um número qualqur e mostre se ele é par ou ímpar</p>
+     Digite um número: <input type="number" id="numero">
+     <button onclick="imparPar()">Verificar</button>
+
+    
+    <script>
+        function imparPar(){
+            var numero = parseInt(document.getElementById("numero").value)
+            var resto = numero % 2 
+            if (resto === 0) {
+                alert("O número é par.")
+                
+            } else {
+                alert("O número é ímpar")
+                
+            }
+
+        }
+    </script>
+
+    
+</body>
+</html>
