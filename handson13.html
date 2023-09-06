@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Handson 13</title> <!--Esta linha representa o título do exercício na guia-->
+</head>
+<body>
+    
+</body>
+
+<p>Crie uma algomiritimo que calcule  a média ponderada de 3 notas.</p><!--Esta linha representa o enunciado-->
+Digite a primeira nota: <input type="number" id="nota1"> <br><br>
+Digite a segunda nota: <input type="number" id="nota2"> <br><br>
+Digite a terceira nota: <input type="number" id="nota3"> <br><br>
+
+<button onclick="verificarAp()">Verficar Nota</button> <!--Esta linha representa o botão de verificação-->
+<script>
+    function verificarAp() {
+            var nota1 = parseFloat(document.getElementById("nota1").value)<!-- Esta linha representa a nota 1-->
+            var nota2 = parseFloat(document.getElementById("nota2").value)<!-- Esta linha representa a nota 2-->
+            var nota3 = parseFloat(document.getElementById("nota3").value)<!-- Esta linha representa a nota 3-->
+
+
+            
+
+            var media = parseFloat(nota1 + nota2 + nota3) / 3; <!-- Esta linha representa a m[éida das 3 notas.]-->
+            if (media >= 7) {
+
+                alert(`A média ponderada do aluno é ${media.toFixed(2)}. Está aprovado.:.`)
+            } else {
+                alert(`A média ponderada do aluno é ${media.toFixed(2)}. Está reprovado:.`)
+            
+            }
+
+
+        }
+</script>
+</body>
+
+""
+</html>
